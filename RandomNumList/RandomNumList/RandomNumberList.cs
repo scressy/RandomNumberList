@@ -7,7 +7,7 @@ namespace RandomNumList
     public class RandomNumberList
     {
         private const int MaxListSize = 10000;
-        private static Random random = new Random();
+        private static Random random = new Random(); //Used for random sorting
 
         public static List<int> MakeRandomList(int size)
         {
@@ -22,6 +22,7 @@ namespace RandomNumList
         public static void Main(string[] args)
         {
             List<int> numList = MakeRandomList(MaxListSize);
+            //Convert list to string and print to screen
             string listAsString = string.Join(", ", numList);
             Console.WriteLine(listAsString);
         }
